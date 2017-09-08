@@ -28,4 +28,12 @@ class Student {
         $this->grades[] = $grade;
     }
     
+    function average() {
+        $total = 0;
+        foreach ($this->grades as $value)
+            $total += $value;
+        return $total / count ($this->grades);
+    }
+    
+    
 }
